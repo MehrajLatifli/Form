@@ -1,0 +1,125 @@
+body{
+    
+    background-color: deepskyblue;
+ 
+    
+}
+
+
+form{
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: deepskyblue;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    margin: auto;
+    min-height: 50vh;
+
+    width: 50%;
+
+    background-color: rgba(255, 8, 0, 0.849);
+ 
+}
+
+
+select
+{
+    background-color: white;
+    color: deepskyblue;
+    width: 50vh;
+    height: 5vh;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+select:focus, select:hover
+{
+    outline: none;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: deepskyblue;
+    color: rgb(255, 255, 255);
+
+}
+
+
+input[type=radio ], input[type=checkbox]{
+
+    width: 5em; 
+    height: 2em;
+    
+    vertical-align: middle;
+
+   
+    
+}
+
+.text{
+    
+    color: aliceblue;
+    font-size: 1.5em;
+}
+
+
+#imageupload{
+
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 250px;
+  padding: 20px;
+
+  background-color: white;
+  border: 4px dashed aquamarine;
+
+}
+
+
+
+
+#real-file::-webkit-file-upload-button{
+  color:white;
+  background-color: aquamarine;
+  padding: 2px;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 1px 0 1px 1px rgb(109, 105, 105);
+  outline: none;
+}
+
+
+
+  #submit{
+
+    width: 150px;
+    height: 50px;
+    font-size: 1em;
+  }
+
+  #result
+  {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: deepskyblue;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    margin: auto;
+    min-height: 50vh;
+
+    width: 50%;
+    background-color: aquamarine;
+
+  
+  }

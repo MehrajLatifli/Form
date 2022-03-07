@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/index.js"></script>
+
+    <title>Form</title>
+</head>
+<body>
+    
+    <form name="carform">
+        
+
+
+        <div class="form_control_1">
+
+            <select name="models_select" id="models_select">
+                 
+            </select>
+            
+  
+            <br>
+            <br>
+            <br>
+            <br>
+
+        </div>
+
+        <div id="formcontrol_2">
+
+            <br>
+
+            <input type="radio"  name='fuel' value='gasoline'> 
+            <span class="text">gasoline</span>
+            <input type="radio"   name='fuel' value='hybrid'> 
+            <span class="text">hybrid</span>
+            <input type="radio"   name='fuel' value='diesel'> 
+            <span class="text">diesel</span>
+
+            <br>
+
+        </div>
+
+        <div id="formcontrol_3">
+
+            <br>
+
+            <input type="checkbox"  name='type' value='sport'> 
+            <span class="text">sport</span>
+            <input type="checkbox"   name='type' value='classic'> 
+            <span class="text">classic</span>
+            <input type="checkbox"   name='type' value='jeep'> 
+            <span class="text">jeep</span>
+
+            <br>
+
+        </div>
+
+        <div id="formcontrol_4">
+
+            <br>
+            <br>
+
+            <div id="imageupload">
+
+             
+                <input type="file" id="real-file"  onchange="showimage(event);"/>
+
+            </div>
+     
+       
+
+            
+            <br>
+
+        </div>
+
+        <div id="formcontrol_5">
+
+            <br>
+            <br>
+
+            <button type="button" id="submit" onclick="getdata()">Submit</button>
+       
+
+            <br>
+
+        </div>
+
+    </form>
+
+    <div id="result">
+       <p id="car_p"></p>
+       <p id="fuel_p"></p>
+       <p id="cartype_p"></p>
+       <img id="image_img" width="250px">
+    </div>
+
+</body>
+</html>
