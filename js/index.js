@@ -3,6 +3,9 @@ var contentmodels;
 let fill_fuels;
 var contentfuels;
 var image="";
+var result;
+var resultcontent;
+var path;
 
 function fillmodels()
 {
@@ -25,7 +28,7 @@ function fillmodels()
 }
 
 
-var path;
+
 
 function choosefile()
 {
@@ -54,8 +57,7 @@ function choosefile()
       
 }
 
-var result;
-var resultcontent;
+
 
 function getdata()
 {
@@ -96,8 +98,6 @@ function getdata()
     }
 
     
-
-
     for (let i = 0; i < x2.length; i++) {
    
       if(x2[i].checked)
@@ -140,43 +140,34 @@ function cookies(){
 
  for (let index = 0; index < document.cookie.length; index++) {
 
-
- 
-   var cookiesarray=document.cookie.split(", ");
+    var cookiesarray=document.cookie.split(", ");
    
-   // console.log(document.cookie);
+    // console.log(document.cookie);
+
+
+    for (let index = 0; index < cookiesarray.length; index++) {
  
 
-   for (let index = 0; index < cookiesarray.length; index++) {
+      // console.log(cookiesarray[index]);
+
+      var itemcookies=cookiesarray[index].split(": ");
   
-
-         // console.log(cookiesarray[index]);
-
-         var itemcookies=cookiesarray[index].split(": ");
+      for (let k = 0; k < itemcookies.length; k++) {
    
-         for (let k = 0; k < itemcookies.length; k++) {
     
-     
-           //  console.log(itemcookies[k]);
-     
-         }
+        //  console.log(itemcookies[k]);
+    
+      }
 
-   
-   }
-
-
- }
+  
+    }  
+  }
 
 
  console.log(cookiesarray);
 
 
 //  var re = new RegExp(/^.*\/\/[^\/]+/);
-
-
-
-
-
 
 
  result=document.getElementById("result");
@@ -208,14 +199,14 @@ function showimage(event){
 
 
 
- }
+}
 
 
 
 window.onload=function main(){
     
   alert("This project work with host (ex: localhost)");
-  
+
     fillmodels();
 
    // choosefile();
