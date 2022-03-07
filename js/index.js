@@ -214,6 +214,8 @@ function showimage(event){
 
 window.onload=function main(){
     
+  alert("This project work with host (ex: localhost)");
+  
     fillmodels();
 
    // choosefile();
